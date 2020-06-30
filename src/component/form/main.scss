@@ -1,0 +1,52 @@
+main{
+    $primary-color: rgb(234, 234, 234);
+    $font-stack: Helvetica, sans-serif;
+    height:100vh;
+    background-color: $primary-color;
+    margin-top: -30px;
+    form{
+      color: black;
+      font: 100% $font-stack bold;
+      font-size: 19px ;
+      text-align: center;
+      padding-top: 50px;
+    }
+    label{
+      font-weight: bold;
+      }
+    .btnHolder{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-top: 15px;
+      }
+      .btn{
+        margin: 5px;
+        background-color: #c4c1c1;
+        font: 100% $font-stack bold;
+        font-size: 12px ;
+        font-weight: bold;
+        border: 0em solid;
+        height: 25px;
+        width: 80px;
+      }
+      .btn:hover{
+        background-color: white;
+      }
+      .pragraph{
+        background-color: #e2e0e0;
+        border: 1px solid #b5b0b0;
+        margin: 20px 50px;
+        height: 50vh;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+        box-shadow: 5px 5px 15px 5px #000000;
+      
+      }
+      .results{
+        padding: 20px;
+        font: 100% $font-stack bold;
+        font-size: 20px ;
+        font-weight: bold;
+        
+      }
+}
