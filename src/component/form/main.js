@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.scss';
 
-class Counter  extends React.Component {
+class Form  extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -10,24 +10,22 @@ class Counter  extends React.Component {
         request: {},
       };
     }
-    handleSubmit = (e) => {
+    handleSubmit = async(e) => {
       e.preventDefault();
       console.log('url', this.state.url , 'method', this.state.method );
       
       if ( this.state.url && this.state.method ) {
-        let request = {
-          url: this.state.url,
-          method: this.state.method,
-        };
-        let url = '';
-        let method = '';
-        console.log(this.state.method);
-        this.setState({ request, url, method });
-        
-        e.target.reset();
-      }else{
-        alert('missing information we need to pass the URL & the REST method you want!');
-      }
+          try{
+              const row = await fetch(`${this.state.url}`)
+              const data = await row.json()
+              let obj = {
+                headers : row.headers,
+                response : data,
+              };
+              this.props.handle(obj)
+             
+           }catch(e){console.log(e)}}
+
       } 
     handleChange = (e) => {
       const url = e.target.value;
@@ -39,7 +37,7 @@ class Counter  extends React.Component {
         this.setState({ method });
         // console.log(method);
     };
-    render() {
+    render(){
       return (
   <main  className="main">
     <form onSubmit={this.handleSubmit}>
@@ -69,18 +67,9 @@ class Counter  extends React.Component {
       <label>DELETE</label>
       </div>
     </form>
-    <div className="pragraph">
-    <section className="results">
-          <span className="method">METHOD: {this.state.request.method}</span>
-          <br>
-          </br>
-          <span className="url">URL: '{this.state.request.url}'</span>
-        </section>
-    </div>
   </main>
   );
-  };
   }
-
+}
   
-  export default Counter;
+  export default Form;
