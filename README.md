@@ -7,7 +7,7 @@ RESTy API testing application using react
 
 
 ### Documentation
-- [Submission PR](https://github.com/yasmin-401-advanced-javascript/resty-app/pull/2)
+- [Submission PR](https://github.com/yasmin-401-advanced-javascript/resty-app/pull/3)
 - [GitHub Pages](https://yasmin-401-advanced-javascript.github.io/resty-app/)
 
 ## Library Used
