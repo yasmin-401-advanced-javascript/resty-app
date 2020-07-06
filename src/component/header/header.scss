@@ -1,0 +1,15 @@
+header{
+    $primary-color: #363636;
+    $font-stack: Helvetica, sans-serif;
+    h1{
+      background-color: $primary-color;
+      text-align: center;
+      color: white;
+      font: 100% $font-stack bold;
+      font-size: 40px;
+      margin-top: 0;
+      padding: 10px;
+      height:80px;
+      line-height: 80px;
+    }
+}
