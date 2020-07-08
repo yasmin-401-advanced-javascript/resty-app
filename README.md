@@ -9,7 +9,7 @@ RESTy API testing application using react
 ### Documentation
 - [Submission PR](https://github.com/yasmin-401-advanced-javascript/resty-app/pull/2)
 - [GitHub Pages](https://yasmin-401-advanced-javascript.github.io/resty-app/)
-
+- [Netlify](https://resty-app-yasmin.netlify.app/)
 ## Library Used
 
 In this app I used only the **react**
