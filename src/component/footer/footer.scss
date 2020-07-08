@@ -1,0 +1,15 @@
+footer{
+    $primary-color: rgb(133, 133, 133);
+    $font-stack: Helvetica, sans-serif;
+    margin-top: -13px;
+    p{
+      background-color: $primary-color;
+      color: black;
+      font: 100% $font-stack bold;
+      font-size: 13px ;
+      padding: 5px;
+      height:40px;
+      line-height: 40px;
+      padding-left: 30px;
+    }
+}
